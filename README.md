@@ -1,2 +1,2 @@
-# webpisphere
+# WebPiSphere
 Página del proyecto
