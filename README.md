@@ -1,2 +1,0 @@
-# WebPiSphere
-Página del proyecto
