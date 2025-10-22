@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PiSphere</title>
-
+    <link rel="icon" href="static/img/favicon.png" type="image/png">
     <link href="static/css/animate.min.css" rel="stylesheet" />
     <link href="static/css/styles.css" rel="stylesheet" />
   </head>
@@ -296,18 +296,18 @@
     <section class="modal animate__animated animate__fadeInDown" id="modal">
       <div class="header">
         <img
-          src="{% static 'img/favicon.ico' %}"
+          src="static/img/favicon.png"
           width="30px"
           height="30px"
           alt="user"
         />
+        <h4>Info</h4>
         <button class="btn-close" id="btn-close">⨉</button>
       </div>
       <div class="modal-body">
-        <h4>Info</h4>
         <p class="message">
-          Esta web se encuentra en desarrollo, si necesita información adicional
-          no dude en contactarnos!!!
+          <strong>Esta web se encuentra en desarrollo</strong>, <small>si necesita información adicional
+          no dude en contactarnos!!!</small>
         </p>
         <p class="contact">
           <i class="fa-solid fa-envelope"></i> contacto@pisphere.com.mx <br />
