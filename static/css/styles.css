@@ -664,6 +664,167 @@ h2 {
   color: #fff;
 }
 
+/* Contact */
+.contact-section {
+  align-items: center;
+  background-color: rgb(17, 24, 39);
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+}
+
+.container-contact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 40px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: 80%;
+}
+
+.card-section-newsletter,
+.card-section-contact {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  height: 80vh;
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-section-newsletter:hover,
+.card-section-contact:hover {
+  transform: translateY(-5px);
+}
+
+.card-newsletter {
+  background: linear-gradient(145deg, rgba(220, 38, 38, 0.15), rgba(139, 0, 0, 0.1));
+  border-color: rgba(220, 38, 38, 0.3);
+}
+
+.card-contact {
+  background: linear-gradient(145deg, rgba(16, 185, 129, 0.15), rgba(5, 150, 105, 0.1));
+  border-color: rgba(16, 185, 129, 0.3);
+}
+
+.card-header {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
+.icon-wrapper {
+  width: 46px;
+  height: 46px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.icon-newsletter {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+
+.icon-contact {
+  background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.card-header h2 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.card-description {
+  color: rgba(255, 255, 255, 0.7);
+  flex-grow: 0;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+input,
+textarea {
+  background: rgba(30, 41, 59, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  color: #fff;
+  font-family: inherit;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-top: 12px;
+  width: 95%;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+input:focus,
+textarea:focus {
+  background: rgba(30, 41, 59, 0.8);
+  border-color: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+
+.form-newsletter input {
+  margin-bottom: 10px;
+}
+
+.form-contact input {
+  margin-bottom: 10px;
+}
+
+.form-contact textarea {
+  margin-bottom: 40px;
+  min-height: 120px;
+  resize: none;
+}
+
+.btn-section {
+  align-items: center;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.btn-newsletter {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
+}
+
+.btn-newsletter:hover {
+  background: linear-gradient(135deg, #dc2626, #b91c1c);
+  box-shadow: 0 6px 20px rgba(239, 68, 68, 0.4);
+  transform: translateY(-2px);
+}
+
+.btn-contact {
+  background: linear-gradient(135deg, #10b981, #059669);
+  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+}
+
+.btn-contact:hover {
+  background: linear-gradient(135deg, #059669, #047857);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
 /* modal */
 .modal {
   background-color: white;
@@ -752,6 +913,7 @@ h2 {
 
 /* modal */
 
+
 /* --- INICIO DE ANEXOS RESPONSIVE --- */
 
 /* ------------------------------------------------ */
@@ -789,6 +951,21 @@ h2 {
   .footer-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
+  }
+
+  .container-contact {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+  }
+
+  /* formulario de contacto */
+  .card-section-contact {
+    height: 60vh;
+  }
+
+  .form-contact textarea {
+    margin-bottom: 20px;
+    min-height: 110px;
   }
 
   /* Modal */
@@ -966,6 +1143,26 @@ h2 {
     position: relative;
     right: 2rem;
     width: 4rem;
+  }
+
+  /* Sección de contacto */
+  .container-contact {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .card .card-section-newsletter,
+  .card .card-section-contact {
+    padding: 30px 24px;
+  }
+
+  .card-header h2 {
+    font-size: 24px;
+  }
+
+  .icon-wrapper {
+    width: 48px;
+    height: 48px;
   }
 }
 
