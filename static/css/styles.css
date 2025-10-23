@@ -739,6 +739,13 @@ h2 {
   font-weight: 700;
 }
 
+.message-error {
+  color: red;
+  font-size: 14px;
+  position: absolute;
+  top: 6.4rem;
+}
+
 .card-description {
   color: rgba(255, 255, 255, 0.7);
   flex-grow: 0;

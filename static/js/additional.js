@@ -23,7 +23,6 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     // Si el elemento es visible
     if (!entry.isIntersecting) {
-      console.log("El elemento no está visible");
       closeModal();
     }
   });
