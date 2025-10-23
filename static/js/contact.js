@@ -14,7 +14,6 @@ btnContact.addEventListener("click", (e) => {
   e.preventDefault();
   let name = document.getElementById("name").value;
   let mail = document.getElementById("mail").value;
-  let message = document.getElementById("message").value;
 
   verificaForm(name, mail);
 });
